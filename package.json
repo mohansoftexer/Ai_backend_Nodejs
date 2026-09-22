@@ -1,0 +1,36 @@
+{
+  "name": "ai_backend_nodejs",
+  "version": "1.0.0",
+  "description": "Backend Node js application implement to without mongodb queries use Ai agent Gemini use data through prompt only",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohansoftexer/Ai_backend_Nodejs.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "Mongoose"
+  ],
+  "author": "mohansoftexer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mohansoftexer/Ai_backend_Nodejs/issues"
+  },
+  "homepage": "https://github.com/mohansoftexer/Ai_backend_Nodejs#readme",
+  "dependencies": {
+    "@google/genai": "^2.24.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "cros": "^1.1.0",
+    "dotenv": "^18.0.2",
+    "express": "^5.2.1",
+    "http-errors": "^2.0.1",
+    "mongoose": "^9.10.1",
+    "morgan": "^1.12.1",
+    "nodemon": "^3.1.14"
+  }
+}
