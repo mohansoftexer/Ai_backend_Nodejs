@@ -138,7 +138,7 @@ const readMongoDBTool = {
         {
             name: "readMongoDB",
             description:
-                "Read customer data from MongoDB. This tool is strictly read-only. It can find or count customers.",
+                "Read customer,customers,orders,products data from MongoDB. This tool is strictly read-only. It can find or count customers,customers,orders,products.",
 
             parameters: {
                 type: "object",
@@ -147,7 +147,7 @@ const readMongoDBTool = {
                     collection: {
                         type: "string",
                         description: "MongoDB collection to read",
-                        enum: ["customers"]
+                        enum: ["customers", "orders", "products"]
                     },
 
                     operation: {
@@ -159,7 +159,7 @@ const readMongoDBTool = {
                     filter: {
                         type: "object",
                         description:
-                            "MongoDB filter used to find matching customers"
+                            "MongoDB filter used to find matching customers,orders,products"
                     }
                 },
 
@@ -291,7 +291,7 @@ async function main(question) {
     console.log("==============================");
 
     console.log(finalResponse.text);
-    
+
 
 
     // 8. Close MongoDB
