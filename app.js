@@ -10,8 +10,12 @@ app.use(express.json());
 var server = http.createServer(app);
 var indexRouter = require('./routers/index');
 var customersRouter = require('./routers/customers');
+var ProductRouter = require('./routers/Product');
+var ordersRouter = require('./routers/orders')
 
 app.use('/customers', customersRouter);
+app.use('/product',ProductRouter);
+app.use('/orders',ordersRouter)
 app.use('', indexRouter);
 config = require('dotenv').config();
 

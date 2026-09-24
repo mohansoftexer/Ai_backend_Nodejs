@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const ALLOWED_COLLECTIONS = ["customers"];
+const ALLOWED_COLLECTIONS = ["customers", "products", "orders"];
 const ALLOWED_OPERATIONS = ["find", "count"];
 
 async function readMongoDB({ collection, operation, filter = {} }) {
